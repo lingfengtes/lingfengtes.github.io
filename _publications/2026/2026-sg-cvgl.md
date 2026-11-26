@@ -2,6 +2,7 @@
 title:          "SG-CVGL: Pixel-Grounded OSM Scene-Graph Distillation for Zero-Map 1D Cross-View Geo-Localization"
 date:           2026-11-20 00:01:00 +0800
 selected:       true
+category:       preprint
 pub:            "Working Paper / Preprint"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-primary">First Author</span>'
 pub_date:       "2026"

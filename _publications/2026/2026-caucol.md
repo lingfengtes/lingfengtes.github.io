@@ -2,6 +2,7 @@
 title:          "CauCol: Causal Disentangled Representation Learning for Robust Colposcopic Diagnosis"
 date:           2026-11-16 00:01:00 +0800
 selected:       true
+category:       preprint
 pub:            "Working Paper / Preprint (in collaboration with SJTU)"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-primary">First Author</span>'
 pub_date:       "2026"

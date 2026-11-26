@@ -18,10 +18,21 @@ navbar_title: Home
 {% endif %}
 
 {% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Research &amp; Systems'
-    %}
+    {% assign published_pubs = site.publications | where: "selected", true | where: "category", "published" | sort: "date" | reverse %}
+    {% if published_pubs.size > 0 %}
+        {%
+            include widgets/publication_card.html
+            publications=published_pubs
+            title='<i class="fas fa-book"></i> Published Papers'
+        %}
+    {% endif %}
+
+    {% assign preprint_pubs = site.publications | where: "selected", true | where: "category", "preprint" | sort: "date" | reverse %}
+    {% if preprint_pubs.size > 0 %}
+        {%
+            include widgets/publication_card.html
+            publications=preprint_pubs
+            title='<i class="fas fa-flask"></i> Preprints &amp; Ongoing Research'
+        %}
+    {% endif %}
 {% endif %}

@@ -2,6 +2,7 @@
 title:          "A Collaborative Superpixelwise Autoencoder for Unsupervised Dimension Reduction in Hyperspectral Images"
 date:           2023-06-01 00:01:00 +0800
 selected:       true
+category:       published
 pub:            "Remote Sensing (SCI Q2)"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-info">Student First Author</span>'
 pub_date:       "2023"

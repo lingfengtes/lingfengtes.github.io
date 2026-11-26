@@ -2,6 +2,7 @@
 title:          "Thor-FlashAgent: Sub-Second Fast-Slow Multimodal Spatial Agent on NVIDIA Jetson AGX Thor"
 date:           2026-10-15 00:01:00 +0800
 selected:       true
+category:       preprint
 pub:            "Edge AI System & Real-Hardware Benchmark"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Jetson AGX Thor</span>'
 pub_date:       "2026"
