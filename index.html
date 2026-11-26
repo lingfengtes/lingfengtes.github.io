@@ -32,7 +32,16 @@ navbar_title: Home
         {%
             include widgets/publication_card.html
             publications=preprint_pubs
-            title='<i class="fas fa-flask"></i> Preprints &amp; Ongoing Research'
+            title='<i class="fas fa-file-alt"></i> Preprints &amp; Working Papers'
+        %}
+    {% endif %}
+
+    {% assign opensource_pubs = site.publications | where: "selected", true | where: "category", "opensource" | sort: "date" | reverse %}
+    {% if opensource_pubs.size > 0 %}
+        {%
+            include widgets/publication_card.html
+            publications=opensource_pubs
+            title='<i class="fab fa-github"></i> Open-Source Projects'
         %}
     {% endif %}
 {% endif %}

@@ -8,11 +8,12 @@ body_attr: >-
 
 {% assign published_pubs = site.publications | where: "category", "published" | sort: "date" | reverse %}
 {% assign preprint_pubs = site.publications | where: "category", "preprint" | sort: "date" | reverse %}
+{% assign opensource_pubs = site.publications | where: "category", "opensource" | sort: "date" | reverse %}
 
 <div class="row">
     <div class="col-12 col-lg-10">
         {% if published_pubs.size > 0 %}
-        <h2 class="pt-4" id="sec-published">Published</h2>
+        <h2 class="pt-4" id="sec-published">Published Papers</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
             {% for item in published_pubs %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
@@ -21,9 +22,18 @@ body_attr: >-
         {% endif %}
 
         {% if preprint_pubs.size > 0 %}
-        <h2 class="pt-4" id="sec-preprints">Preprints &amp; Ongoing Research</h2>
+        <h2 class="pt-4" id="sec-preprints">Preprints &amp; Working Papers</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
             {% for item in preprint_pubs %}
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if opensource_pubs.size > 0 %}
+        <h2 class="pt-4" id="sec-opensource">Open-Source Projects</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in opensource_pubs %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
             {% endfor %}
         </div>
@@ -33,7 +43,8 @@ body_attr: >-
     <div class="col-2 d-none d-lg-block">
         <div id="navbar-section" class="nav nav-pills flex-column sticky-top" style="top: 80px">
             <a class="nav-link d-block" href="#sec-published">Published</a>
-            <a class="nav-link d-block" href="#sec-preprints">Preprints &amp; Ongoing</a>
+            <a class="nav-link d-block" href="#sec-preprints">Preprints</a>
+            <a class="nav-link d-block" href="#sec-opensource">Open-Source</a>
         </div>
     </div>
 </div>
