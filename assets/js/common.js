@@ -36,14 +36,4 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
-
-    $('#lang-toggle-btn').on('click', function () {
-        var current = document.body.getAttribute('data-lang') || 'en';
-        var next = current === 'en' ? 'zh' : 'en';
-        document.body.setAttribute('data-lang', next);
-        localStorage.setItem('site-lang', next);
-        if ($grid && $grid.length) {
-            setTimeout(function () { $grid.masonry('layout'); }, 50);
-        }
-    });
 })
