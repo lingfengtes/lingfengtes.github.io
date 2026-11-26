@@ -10,11 +10,9 @@ $(function () {
         },
         afterLoad: function(element) {
             if (element.is('img')) {
-                // remove background-image style
                 element.css('background-image', 'none');
                 element.css('min-height', '0');
             } else if (element.is('div')) {
-                // set the style to background-size: cover; 
                 element.css('background-size', 'cover');
                 element.css('background-position', 'center');
             }
@@ -31,12 +29,21 @@ $(function () {
         "itemSelector": ".grid-item",
         "columnWidth": ".grid-sizer"
     });
-    // layout Masonry after each image loads
     $grid.imagesLoaded().progress(function () {
         $grid.masonry('layout');
     });
 
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
+    });
+
+    $('#lang-toggle-btn').on('click', function () {
+        var current = document.body.getAttribute('data-lang') || 'en';
+        var next = current === 'en' ? 'zh' : 'en';
+        document.body.setAttribute('data-lang', next);
+        localStorage.setItem('site-lang', next);
+        if ($grid && $grid.length) {
+            setTimeout(function () { $grid.masonry('layout'); }, 50);
+        }
     });
 })

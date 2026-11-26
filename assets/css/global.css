@@ -150,3 +150,28 @@ div.lazy {
         transition: none;
     }
 }
+
+/* Bilingual toggle (default: en) */
+body[data-lang="en"] .lang-zh {
+    display: none !important;
+}
+body[data-lang="zh"] .lang-en {
+    display: none !important;
+}
+.lang-switch-btn {
+    border: 1px solid #dee2e6;
+    background: transparent;
+    color: #495057;
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    line-height: 1.5;
+}
+.lang-switch-btn:hover {
+    border-color: #6c757d;
+    color: #212529;
+    background-color: rgba(0, 0, 0, 0.03);
+}

@@ -1,17 +1,29 @@
 <nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <strong class="lang-en">{{ site.data.profile.navbar_name }}</strong>
+            <strong class="lang-zh">郑铃锋</strong>
+        </a>
         <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-map"></i> Menu
+            <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto align-items-sm-center">
                 {% for item in site.data.navigation.pages %}
                 <li class="nav-item {% if item.name == page.navbar_title or include.active_page == item.name %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                    <a class="nav-link" href="{{ item.url | relative_url }}">
+                        <span class="lang-en">{{ item.name }}</span>
+                        <span class="lang-zh">{{ item.name_zh | default: item.name }}</span>
+                    </a>
                 </li>
                 {% endfor %}
+                <li class="nav-item ml-sm-2 mt-1 mt-sm-0">
+                    <button id="lang-toggle-btn" type="button" class="lang-switch-btn" aria-label="Switch language">
+                        <span class="lang-en">中文</span>
+                        <span class="lang-zh">EN</span>
+                    </button>
+                </li>
             </ul>
         </div>
     </div>

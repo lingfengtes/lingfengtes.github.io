@@ -3,8 +3,8 @@ secondary_name: "(郑铃锋)"
 navbar_name: "Lingfeng Zheng"
 
 positions:
-- name: M.Eng. Student in Computer Technology, Shaanxi Normal University
-- name: Former Computer Vision Algorithm Engineer, Samsung Electronics (China) R&D Center
+- name: '<span class="lang-en">M.Eng. Student in Computer Technology, Shaanxi Normal University</span><span class="lang-zh">陕西师范大学 · 计算机技术 硕士研究生</span>'
+- name: '<span class="lang-en">Former Computer Vision Algorithm Engineer, Samsung Electronics (China) R&amp;D Center</span><span class="lang-zh">前三星电子（中国）研发中心 · 视觉算法工程师</span>'
 
 email: "lingfeng_zlf@163.com"
 github: lingfengtes
@@ -12,39 +12,52 @@ github: lingfengtes
 
 short_bio_text_justify: false
 short_bio: >-
-  <p>
-    I am a graduate student in Computer Technology at the School of Computer Science, <strong>Shaanxi Normal University</strong> (ranked Top 10%, First-Class Academic Scholarship), and a former Computer Vision Algorithm Engineer at <strong>Samsung Electronics (China) R&amp;D Center</strong> (Best Newcomer Award).
-  </p>
-  <p>
-    My research centers on <strong>geometry- and mechanism-guided generalizable multimodal representation learning</strong>—bridging spatial topology distillation (<em>zero-map cross-view geo-localization</em>), intervention-aware causal disentanglement, and <strong>sub-second on-device multimodal agents</strong> deployed on <strong>NVIDIA Jetson AGX Thor</strong>.
-  </p>
-  <p>
-    I am actively seeking 2027/2028 research &amp; core algorithm internship opportunities in <strong>Shenzhen</strong> and <strong>Hangzhou</strong> (spatial intelligence, multimodal perception, and edge agentic AI). Feel free to reach out via email!
-  </p>
+  <div class="lang-en">
+    <p>
+      I am a graduate student in Computer Technology at the School of Computer Science, <strong>Shaanxi Normal University</strong> (ranked Top 10%, First-Class Academic Scholarship), and a former Computer Vision Algorithm Engineer at <strong>Samsung Electronics (China) R&amp;D Center</strong> (Best Newcomer Award).
+    </p>
+    <p>
+      My research centers on <strong>geometry- and mechanism-guided generalizable multimodal representation learning</strong>—bridging spatial topology distillation (<em>zero-map cross-view geo-localization</em>), intervention-aware causal disentanglement, and <strong>sub-second on-device multimodal agents</strong> deployed on <strong>NVIDIA Jetson AGX Thor</strong>.
+    </p>
+    <p>
+      I am actively seeking 2027/2028 research &amp; core algorithm internship opportunities in <strong>Shenzhen</strong> and <strong>Hangzhou</strong> (spatial intelligence, multimodal perception, and edge agentic AI). Feel free to reach out via email!
+    </p>
+  </div>
+  <div class="lang-zh">
+    <p>
+      我是<strong>陕西师范大学</strong>计算机科学学院计算机技术专业 2025 级硕士研究生（专业综测前 10%，获硕士一等积学奖学金），曾任<strong>三星电子（中国）研发中心</strong>视觉算法工程师（获部门优秀新人奖）。
+    </p>
+    <p>
+      研究聚焦<strong>复杂退化环境下的几何拓扑先验引导与因果解耦多模态表征学习</strong>——覆盖零地图跨视角视觉定位（<em>高阶场景图知识蒸馏</em>）、干预感知因果解耦表征，以及部署于 <strong>NVIDIA Jetson AGX Thor</strong> 的<strong>亚秒级快慢双路端侧多模态智能体</strong>。
+    </p>
+    <p>
+      目前积极寻求<strong>深圳、杭州</strong>方向的 2027/2028 算法研究与核心实习机会（空间智能、视觉与多模态大模型、端侧智能体方向），欢迎通过邮件联系交流！
+    </p>
+  </div>
 
 education:
-- name: Shaanxi Normal University
-  dept: School of Computer Science
-  position: M.Eng. in Computer Technology (Top 10%, First-Class Scholarship)
+- name: '<span class="lang-en">Shaanxi Normal University</span><span class="lang-zh">陕西师范大学（211 / 双一流）</span>'
+  dept: '<span class="lang-en">School of Computer Science</span><span class="lang-zh">计算机科学学院</span>'
+  position: '<span class="lang-en">M.Eng. in Computer Technology (Top 10%, First-Class Scholarship)</span><span class="lang-zh">计算机技术 · 硕士研究生（专业综测前 10%，一等积学奖学金）</span>'
   date: Sep. 2025 - Jun. 2028
-- name: Shaanxi Normal University
-  dept: School of Computer Science
-  position: B.Eng. in Artificial Intelligence
+- name: '<span class="lang-en">Shaanxi Normal University</span><span class="lang-zh">陕西师范大学（211 / 双一流）</span>'
+  dept: '<span class="lang-en">School of Computer Science</span><span class="lang-zh">计算机科学学院</span>'
+  position: '<span class="lang-en">B.Eng. in Artificial Intelligence</span><span class="lang-zh">人工智能 · 工学学士</span>'
   date: Sep. 2020 - Jun. 2024
 
 experience:
-- name: Samsung Electronics (China) R&D Center
-  position: Computer Vision Algorithm Engineer (Best Newcomer Award)
+- name: '<span class="lang-en">Samsung Electronics (China) R&amp;D Center</span><span class="lang-zh">三星电子（中国）研发中心</span>'
+  position: '<span class="lang-en">Computer Vision Algorithm Engineer (Best Newcomer Award)</span><span class="lang-zh">视觉算法工程师（获部门优秀新人奖）</span>'
   date: Jul. 2024 - Oct. 2024
 
 awards:
-- name: Third Prize, Huawei Cup National Graduate Mathematical Modeling Contest
+- name: '<span class="lang-en">Third Prize, Huawei Cup National Graduate Mathematical Modeling Contest</span><span class="lang-zh">“华为杯”中国研究生数学建模竞赛全国三等奖</span>'
   date: 2025
-- name: First-Class Academic Scholarship, Shaanxi Normal University (Top 10%)
+- name: '<span class="lang-en">First-Class Academic Scholarship, Shaanxi Normal University (Top 10%)</span><span class="lang-zh">陕西师范大学硕士一等积学奖学金（专业前 10%）</span>'
   date: 2025
-- name: Best Newcomer Award, Samsung Electronics (China) R&D Center
+- name: '<span class="lang-en">Best Newcomer Award, Samsung Electronics (China) R&amp;D Center</span><span class="lang-zh">三星电子（中国）研发中心部门优秀新人奖</span>'
   date: 2024
-- name: Second Prize, National College Mathematics Competition
+- name: '<span class="lang-en">Second Prize, National College Mathematics Competition</span><span class="lang-zh">全国大学生数学竞赛二等奖</span>'
   date: 2023
-- name: International Invention Patent (Self-Attention &amp; CycleGAN ScanSAR Scalloping Suppression)
+- name: '<span class="lang-en">International Invention Patent (ScanSAR Scalloping Suppression)</span><span class="lang-zh">国际发明专利（ScanSAR 图像扇贝效应抑制方法）</span>'
   date: 2023

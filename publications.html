@@ -13,7 +13,7 @@ body_attr: >-
 <div class="row">
     <div class="col-12 col-lg-10">
         {% if published_pubs.size > 0 %}
-        <h2 class="pt-4" id="sec-published">Published Papers</h2>
+        <h2 class="pt-4" id="sec-published"><span class="lang-en">Published Papers</span><span class="lang-zh">已发表论文</span></h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
             {% for item in published_pubs %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
@@ -22,7 +22,7 @@ body_attr: >-
         {% endif %}
 
         {% if preprint_pubs.size > 0 %}
-        <h2 class="pt-4" id="sec-preprints">Preprints &amp; Working Papers</h2>
+        <h2 class="pt-4" id="sec-preprints"><span class="lang-en">Preprints &amp; Working Papers</span><span class="lang-zh">在投论文</span></h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
             {% for item in preprint_pubs %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
@@ -31,7 +31,7 @@ body_attr: >-
         {% endif %}
 
         {% if opensource_pubs.size > 0 %}
-        <h2 class="pt-4" id="sec-opensource">Open-Source Projects</h2>
+        <h2 class="pt-4" id="sec-opensource"><span class="lang-en">Open-Source Projects</span><span class="lang-zh">GitHub 开源项目</span></h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
             {% for item in opensource_pubs %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
@@ -42,9 +42,9 @@ body_attr: >-
 
     <div class="col-2 d-none d-lg-block">
         <div id="navbar-section" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            <a class="nav-link d-block" href="#sec-published">Published</a>
-            <a class="nav-link d-block" href="#sec-preprints">Preprints</a>
-            <a class="nav-link d-block" href="#sec-opensource">Open-Source</a>
+            <a class="nav-link d-block" href="#sec-published"><span class="lang-en">Published</span><span class="lang-zh">已发表论文</span></a>
+            <a class="nav-link d-block" href="#sec-preprints"><span class="lang-en">Preprints</span><span class="lang-zh">在投论文</span></a>
+            <a class="nav-link d-block" href="#sec-opensource"><span class="lang-en">Open-Source</span><span class="lang-zh">开源项目</span></a>
         </div>
     </div>
 </div>

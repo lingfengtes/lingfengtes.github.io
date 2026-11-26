@@ -23,7 +23,7 @@ navbar_title: Home
         {%
             include widgets/publication_card.html
             publications=published_pubs
-            title='<i class="fas fa-book"></i> Published Papers'
+            title='<i class="fas fa-book"></i> <span class="lang-en">Published Papers</span><span class="lang-zh">已发表论文</span>'
         %}
     {% endif %}
 
@@ -32,7 +32,7 @@ navbar_title: Home
         {%
             include widgets/publication_card.html
             publications=preprint_pubs
-            title='<i class="fas fa-file-alt"></i> Preprints &amp; Working Papers'
+            title='<i class="fas fa-file-alt"></i> <span class="lang-en">Preprints &amp; Working Papers</span><span class="lang-zh">在投论文</span>'
         %}
     {% endif %}
 
@@ -41,7 +41,7 @@ navbar_title: Home
         {%
             include widgets/publication_card.html
             publications=opensource_pubs
-            title='<i class="fab fa-github"></i> Open-Source Projects'
+            title='<i class="fab fa-github"></i> <span class="lang-en">Open-Source Projects</span><span class="lang-zh">GitHub 开源项目</span>'
         %}
     {% endif %}
 {% endif %}

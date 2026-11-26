@@ -8,7 +8,8 @@ pub:            "Remote Sensing (SCI Q2), Vol. 15, Issue 17, 4211"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-info">Student First Author</span>'
 pub_date:       "2023"
 abstract: >-
-  Advisor first author, Lingfeng Zheng second author (independent lead of core architecture modeling and experiments). Proposes ColAE, jointly modeling local superpixel spatial homogeneity and cross-superpixel manifold consistency for robust unsupervised hyperspectral dimensionality reduction.
+  <span class="lang-en">Advisor first author, Lingfeng Zheng second author (independent lead of core architecture modeling and experiments). Proposes ColAE, jointly modeling local superpixel spatial homogeneity and cross-superpixel manifold consistency for robust unsupervised hyperspectral dimensionality reduction.</span>
+  <span class="lang-zh">导师第一作者，郑铃锋第二作者（学生第一作者，独立负责核心网络建模与全部实验）。提出超像素级空频协同自编码框架 ColAE，联合建模同质超像素空间上下文一致性与跨波段光谱关联，显著提升无监督降维表征的抗噪性与泛化精度。</span>
 authors:
   - Chao Yao
   - Lingfeng Zheng
