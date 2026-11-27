@@ -10,6 +10,7 @@ pub_date:       "2023"
 abstract: >-
   <span class="lang-en">Advisor first author, Lingfeng Zheng second author (independent lead of core architecture modeling and experiments). Proposes ColAE, jointly modeling local superpixel spatial homogeneity and cross-superpixel manifold consistency for robust unsupervised hyperspectral dimensionality reduction.</span>
   <span class="lang-zh">导师第一作者，郑铃锋第二作者（学生第一作者，独立负责核心网络建模与全部实验）。提出超像素级空频协同自编码框架 ColAE，联合建模同质超像素空间上下文一致性与跨波段光谱关联，显著提升无监督降维表征的抗噪性与泛化精度。</span>
+cover:          /assets/images/covers/colae_cover.jpg
 authors:
   - Chao Yao
   - Lingfeng Zheng
